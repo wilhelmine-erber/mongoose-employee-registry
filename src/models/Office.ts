@@ -2,12 +2,12 @@ import { Schema, Types, model} from 'mongoose';
 
 
 export interface IOffice{
-    contactAdress: Types.ObjectId;
+    contactAddress: Types.ObjectId;
     employees: Types.ObjectId[];
 }
 
 const officeSchema = new Schema<IOffice>({
-    contactAdress: {
+    contactAddress: {
         type: Schema.Types.ObjectId,
         ref: 'adress',
         required: true,
