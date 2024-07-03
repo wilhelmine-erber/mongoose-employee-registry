@@ -7,7 +7,7 @@ export async function connect(){
         if(!process.env.DB_HOST){
             throw new Error('Missing environment variables for database connection');
         }
-        await mongoose.connect(`${process.env.DB_HOST}`);
+        await mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}`);
         console.log('Connected to the database');
 
     }catch(error){
