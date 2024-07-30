@@ -1,6 +1,6 @@
 # Employee Registry
 
-This project is about how to work with relations in a MongoDB database.
+This project is backend only.
 
 
 
